@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .btn {
+            width: 9em;
+            height: 3em;
+            border-radius: 30em;
+            margin-top: 20px;
+            background: #4c75af;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .niko {
+            margin-top: 50px;
+            max-width: 80%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Кнопка, которая запускает звук -->
+    <button class="btn" onclick="document.getElementById('meowSound').play()">мяу</button>
+    
+    <img src="niko.jpg" class="niko" alt="Картинка">
+    
+    <!-- Скрытый аудио-элемент -->
+    <audio id="meowSound" src="meow.wav" preload="auto"></audio>
+</body>
+</html>
